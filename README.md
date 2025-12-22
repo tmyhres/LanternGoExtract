@@ -41,3 +41,12 @@ The intermediate format supports:
 
 ## How To Use
 Please visit the [wiki](https://github.com/LanternEQ/LanternExtractor/wiki) for more info.
+
+---
+
+## Disclaimer & Copyright
+
+**LanternExtractor** is a community-driven, open-source project designed for educational use and data interoperability.
+
+1.  **No Assets Included:** This repository contains **source code only**. It does not contain any copyrighted assets (models, textures, sounds, or game data) from EverQuest. Users must provide their own legally obtained copy of the game to utilize these tools.
+2.  **Trademark:** EverQuest is a registered trademark of Daybreak Game Company LLC. This project is not affiliated with, endorsed by, or licensed by Daybreak Game Company LLC.
