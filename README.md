@@ -1,15 +1,9 @@
 # LanternExtractor
-EverQuest Trilogy Client file extractor that exports game data into formats usable in modern game engines. 
+LanternExtractor is a C# utility designed to parse legacy file formats from the EverQuest Trilogy client (1999-2001) and export them into open standards.
 
-This project is part of the [LanternEQ Project](https://www.lanterneq.com) which aims to reverse engineer and re-implement classic EverQuest in the Unity Engine.
-
-## Overview
-There have been many fantastic tools over the years that extract EverQuest content. Sadly, as most of these were written 15+ years ago, they can be hard to find, buggy on modern hardware and sometimes written in legacy programming languages. LanternExtractor fixes this by combining all of this functionality and more into one simple tool.
-
-Although the extractor supports multiple export formats, the main focus is exporting assets to a human readable intermediate text format which can then be reconstructed in game engines.
-
-The extractor also supports:
+The supports:
   - Raw archive content extraction
+  - Intermediate text format
   - OBJ export
   - glTF export
 
@@ -47,8 +41,3 @@ The intermediate format supports:
 
 ## How To Use
 Please visit the [wiki](https://github.com/LanternEQ/LanternExtractor/wiki) for more info.
-
-## Thanks
-- Windcatcher - WLD file format document without which this project wouldn't be possible.
-- Harakiri - Private classic test server.
-- clickclickmoon - S3D (PFS) format documentation
