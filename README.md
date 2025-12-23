@@ -1,7 +1,7 @@
 # LanternExtractor
 LanternExtractor is a C# utility designed to parse legacy file formats from the EverQuest Trilogy client (1999-2001) and export them into open standards.
 
-The supports:
+It supports:
   - Raw archive content extraction
   - Intermediate text format
   - OBJ export
