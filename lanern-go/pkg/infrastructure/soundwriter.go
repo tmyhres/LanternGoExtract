@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 // WriteSoundAsWav writes raw audio bytes to a WAV file.

@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
-	"github.com/lanterneq/lanern-go/pkg/wld/helpers"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/helpers"
 )
 
 // ActorWriterNewGlobal exports actor data globally, merging with existing files.

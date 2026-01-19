@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 // Archive defines the interface for reading archive files.

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
 )
 
 // ObjectInstance (0x15)

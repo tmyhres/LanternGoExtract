@@ -3,8 +3,8 @@ package exporters
 import (
 	"fmt"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
-	"github.com/lanterneq/lanern-go/pkg/wld/helpers"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/helpers"
 )
 
 // LegacyMeshIntermediateAssetWriter exports legacy meshes in the intermediate mesh format.

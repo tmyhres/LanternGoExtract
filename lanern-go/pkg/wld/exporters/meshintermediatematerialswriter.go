@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // MeshIntermediateMaterialsWriter exports material lists in the intermediate format.

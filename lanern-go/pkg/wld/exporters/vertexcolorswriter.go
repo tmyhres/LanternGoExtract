@@ -3,7 +3,7 @@ package exporters
 import (
 	"strconv"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // VertexColorsWriter exports vertex color data to a text format.

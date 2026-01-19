@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 func TestArchiveTypeString(t *testing.T) {

@@ -3,7 +3,7 @@ package fragments
 import (
 	"math"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
 )
 
 // Mesh (0x36) contains geometric data for a mesh.

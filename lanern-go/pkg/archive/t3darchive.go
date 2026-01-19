@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 var (

@@ -3,7 +3,7 @@ package exporters
 import (
 	"fmt"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // ObjectInstanceWriter exports object instance data to a text format.

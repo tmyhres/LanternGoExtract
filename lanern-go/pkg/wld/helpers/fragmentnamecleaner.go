@@ -4,7 +4,7 @@ package helpers
 import (
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // FragmentPrefixes maps fragment type names to their internal name prefixes.

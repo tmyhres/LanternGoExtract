@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 // WriteImageAsPng writes image bytes (BMP or DDS format) to a PNG file.

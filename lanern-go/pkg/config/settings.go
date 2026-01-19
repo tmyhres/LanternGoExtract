@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure"
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
-	"github.com/lanterneq/lanern-go/pkg/wld"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld"
 )
 
 // Settings holds the configuration options for the Lantern extractor.

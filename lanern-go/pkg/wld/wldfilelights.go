@@ -1,9 +1,9 @@
 package wld
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/archive"
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/archive"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // WldFileLights represents a lights WLD file containing light instances.

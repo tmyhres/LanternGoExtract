@@ -3,7 +3,7 @@ package helpers
 import (
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // CharacterFixer fixes numerous issues in EverQuest's character model files.

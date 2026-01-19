@@ -3,9 +3,9 @@ package exporters
 import (
 	"fmt"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
-	"github.com/lanterneq/lanern-go/pkg/wld/helpers"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/helpers"
 )
 
 // MeshIntermediateAssetWriter exports meshes in the intermediate mesh format.

@@ -1,7 +1,7 @@
 package wld
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // FragmentFactory is a function type that creates new fragment instances.

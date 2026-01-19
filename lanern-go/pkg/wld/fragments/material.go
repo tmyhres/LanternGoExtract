@@ -1,7 +1,7 @@
 package fragments
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
 )
 
 // Material (0x30) contains information about a material's shader and textures.

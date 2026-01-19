@@ -3,7 +3,7 @@ package fragments
 import (
 	"fmt"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
 )
 
 // LightInstance (0x28)

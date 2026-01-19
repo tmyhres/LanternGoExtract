@@ -1,10 +1,10 @@
 package wld
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/archive"
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/archive"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // WldFileZone represents a zone WLD file containing main geometry and BSP tree.

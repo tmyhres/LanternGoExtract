@@ -1,7 +1,7 @@
 package fragments
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
 )
 
 // VertexColors (0x32) contains a list of colors, one per vertex.

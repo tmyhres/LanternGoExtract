@@ -1,7 +1,7 @@
 package fragments
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
 )
 
 // GlobalAmbientLight (0x35) contains the color value for ambient lighting.

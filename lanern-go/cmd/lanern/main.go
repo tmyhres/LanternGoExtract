@@ -8,9 +8,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/lanterneq/lanern-go/pkg/config"
-	"github.com/lanterneq/lanern-go/pkg/eq"
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/config"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/eq"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 const (

@@ -1,4 +1,4 @@
-module github.com/lanterneq/lanern-go
+module github.com/tmyhres/LanternGoExtract/lanern-go
 
 go 1.24.0
 

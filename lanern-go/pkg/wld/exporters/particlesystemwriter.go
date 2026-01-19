@@ -1,8 +1,8 @@
 package exporters
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
-	"github.com/lanterneq/lanern-go/pkg/wld/helpers"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/helpers"
 )
 
 // ParticleSystemWriter exports particle system data to a text format.

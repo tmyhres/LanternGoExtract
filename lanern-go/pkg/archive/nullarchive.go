@@ -3,7 +3,7 @@ package archive
 import (
 	"errors"
 
-	"github.com/lanterneq/lanern-go/pkg/infrastructure/logger"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/infrastructure/logger"
 )
 
 // ErrNullArchive is returned when attempting to initialize a null archive.

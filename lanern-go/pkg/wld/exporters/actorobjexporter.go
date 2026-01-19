@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld"
-	"github.com/lanterneq/lanern-go/pkg/wld/datatypes"
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
-	"github.com/lanterneq/lanern-go/pkg/wld/helpers"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/datatypes"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/helpers"
 )
 
 // ActorObjExporterSettings contains configuration for actor OBJ export.

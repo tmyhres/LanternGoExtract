@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
-	"github.com/lanterneq/lanern-go/pkg/wld/helpers"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/helpers"
 )
 
 // SkeletonHierarchyWriter exports skeleton hierarchy data to a text format.

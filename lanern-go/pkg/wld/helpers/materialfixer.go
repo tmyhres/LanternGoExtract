@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // MaterialFixer fixes issues with EverQuest materials.

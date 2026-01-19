@@ -1,7 +1,7 @@
 package exporters
 
 import (
-	"github.com/lanterneq/lanern-go/pkg/wld/fragments"
+	"github.com/tmyhres/LanternGoExtract/lanern-go/pkg/wld/fragments"
 )
 
 // LightInstancesWriter exports light instance data to a text format.
