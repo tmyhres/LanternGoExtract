@@ -74,10 +74,17 @@ type Settings struct {
 
 // NewSettings creates a new Settings instance with default values.
 func NewSettings(settingsFilePath string, log logger.Logger) *Settings {
+	// Default to current working directory
+	cwd, err := os.Getwd()
+	if err != nil {
+		cwd = "."
+	}
+	cwd = filepath.Clean(cwd) + string(filepath.Separator)
+
 	return &Settings{
 		settingsFilePath:     settingsFilePath,
 		logger:               log,
-		EverQuestDirectory:   "/opt/EverQuest/",
+		EverQuestDirectory:   cwd,
 		RawS3dExtract:        false,
 		ExportZoneMeshGroups: false,
 		ExportHiddenGeometry: false,
