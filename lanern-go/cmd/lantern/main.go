@@ -93,8 +93,8 @@ func main() {
 func printUsage() {
 	fmt.Println("Lantern EQ Extractor")
 	fmt.Println("")
-	fmt.Println("Usage: lanern <archive>")
-	fmt.Println("       lanern -archive=<archive>")
+	fmt.Println("Usage: lantern <archive>")
+	fmt.Println("       lantern -archive=<archive>")
 	fmt.Println("")
 	fmt.Println("Archive options:")
 	fmt.Println("  <filename>   - Extract a specific archive file (e.g., gfaydark.s3d)")
