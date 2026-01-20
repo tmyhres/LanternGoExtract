@@ -107,9 +107,12 @@ func (s *Settings) Initialize() error {
 	}
 
 	if val, ok := parsedSettings["EverQuestDirectory"]; ok {
-		s.EverQuestDirectory = val
-		// Ensure the path ends with a separator
-		s.EverQuestDirectory = filepath.Clean(s.EverQuestDirectory) + string(filepath.Separator)
+		dir := filepath.Clean(val) + string(filepath.Separator)
+		// Only use the configured directory if it exists
+		if _, err := os.Stat(dir); err == nil {
+			s.EverQuestDirectory = dir
+		}
+		// Otherwise keep the default (current working directory)
 	}
 
 	if val, ok := parsedSettings["RawS3DExtract"]; ok {
