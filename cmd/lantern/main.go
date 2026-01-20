@@ -113,16 +113,25 @@ func printUsage() {
 }
 
 // extractArchive extracts a single archive file.
-// TODO: Implement actual extraction using the archive package.
 func extractArchive(filePath, exportPath string, log logger.Logger, settings *config.Settings) error {
-	fmt.Printf("Started extracting %s\n", filePath)
+	fmt.Printf("Extracting %s\n", filePath)
 	log.LogInfo(fmt.Sprintf("Extracting archive: %s", filePath))
 
-	// TODO: Call archive.Extract(filePath, exportPath, log, settings)
-	// This is a placeholder that will be filled in when the ArchiveExtractor
-	// is converted to Go.
+	// Convert config.Settings to eq.Settings
+	eqSettings := &eq.Settings{
+		EverQuestDirectory:             settings.EverQuestDirectory,
+		RawS3dExtract:                  settings.RawS3dExtract,
+		ExportSoundsToSingleFolder:     settings.ExportSoundsToSingleFolder,
+		ExportCharactersToSingleFolder: settings.ExportCharactersToSingleFolder,
+		ExportEquipmentToSingleFolder:  settings.ExportEquipmentToSingleFolder,
+		ExportZoneWithObjects:          settings.ExportZoneWithObjects,
+		ModelExportFormat:              settings.ModelExportFormat,
+	}
 
-	fmt.Printf("Finished extracting %s\n", filePath)
+	if err := eq.Extract(filePath, exportPath, log, eqSettings); err != nil {
+		return err
+	}
+
 	return nil
 }
 

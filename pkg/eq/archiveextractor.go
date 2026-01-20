@@ -9,6 +9,7 @@ import (
 	"github.com/tmyhres/LanternGoExtract/pkg/infrastructure/logger"
 	"github.com/tmyhres/LanternGoExtract/pkg/sound"
 	"github.com/tmyhres/LanternGoExtract/pkg/wld"
+	"github.com/tmyhres/LanternGoExtract/pkg/wld/exporters"
 	"github.com/tmyhres/LanternGoExtract/pkg/wld/helpers"
 )
 
@@ -289,7 +290,30 @@ func initializeWldAndWriteTextures(wldFile wld.WldFile, rootFolder, texturePath 
 		// glTF export requires textures to be present first
 		wldFile.Initialize(rootFolder, false)
 		writeWldTextures(arc, wldFile, texturePath, log)
-		wldFile.ExportData()
+		exportWldToGltf(wldFile, settings, log)
+	}
+}
+
+// exportWldToGltf exports a WLD file to glTF format.
+func exportWldToGltf(wldFile wld.WldFile, settings *Settings, log logger.Logger) {
+	actors := wldFile.GetActors()
+	meshes := wldFile.GetMeshes()
+	materialLists := wldFile.GetMaterialLists()
+
+	exportFolder := wldFile.GetExportFolderForWldType()
+	zoneName := wldFile.GetZoneName()
+	wldType := wldFile.GetWldType()
+
+	exportSettings := &exporters.ActorExportSettings{
+		ExportGltfInGlbFormat:          false,
+		ExportGltfVertexColors:         false,
+		ExportZoneWithObjects:          settings.ExportZoneWithObjects,
+		ExportAllAnimationFrames:       false,
+		ExportCharactersToSingleFolder: settings.ExportCharactersToSingleFolder,
+	}
+
+	if err := exporters.ExportActorsToGltf(actors, meshes, materialLists, wldType, zoneName, exportFolder, exportSettings); err != nil {
+		log.LogError("Failed to export to glTF: " + err.Error())
 	}
 }
 

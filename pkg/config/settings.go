@@ -88,6 +88,7 @@ func NewSettings(settingsFilePath string, log logger.Logger) *Settings {
 		RawS3dExtract:        false,
 		ExportZoneMeshGroups: false,
 		ExportHiddenGeometry: false,
+		ModelExportFormat:    wld.ModelExportFormatGltf,
 		LoggerVerbosity:      0,
 	}
 }

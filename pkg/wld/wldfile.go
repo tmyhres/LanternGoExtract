@@ -60,6 +60,15 @@ type WldFile interface {
 
 	// GetAllBitmapNames returns all bitmap names from the WLD file.
 	GetAllBitmapNames() []string
+
+	// GetActors returns all Actor fragments from the WLD file.
+	GetActors() []*fragments.Actor
+
+	// GetMeshes returns all Mesh fragments from the WLD file.
+	GetMeshes() []*fragments.Mesh
+
+	// GetMaterialLists returns all MaterialList fragments from the WLD file.
+	GetMaterialLists() []*fragments.MaterialList
 }
 
 // BaseWldFile provides common functionality for all WLD file types.
@@ -403,4 +412,19 @@ func (w *BaseWldFile) GetAllBitmapNames() []string {
 		}
 	}
 	return bitmaps
+}
+
+// GetActors returns all Actor fragments from the WLD file.
+func (w *BaseWldFile) GetActors() []*fragments.Actor {
+	return GetFragmentsByType[*fragments.Actor](w)
+}
+
+// GetMeshes returns all Mesh fragments from the WLD file.
+func (w *BaseWldFile) GetMeshes() []*fragments.Mesh {
+	return GetFragmentsByType[*fragments.Mesh](w)
+}
+
+// GetMaterialLists returns all MaterialList fragments from the WLD file.
+func (w *BaseWldFile) GetMaterialLists() []*fragments.MaterialList {
+	return GetFragmentsByType[*fragments.MaterialList](w)
 }
