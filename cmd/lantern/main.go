@@ -14,19 +14,20 @@ import (
 )
 
 const (
-	exportDir    = "Exports/"
-	settingsFile = "settings.txt"
-	logFile      = "log.txt"
+	exportDir = "Exports/"
+	logFile   = "log.txt"
 )
 
 func main() {
 	// Define command line flags
 	var (
-		archiveName string
-		showHelp    bool
+		archiveName  string
+		settingsFile string
+		showHelp     bool
 	)
 
 	flag.StringVar(&archiveName, "archive", "", "Archive name to extract (filename/shortname/all/zones/characters/equipment/sounds)")
+	flag.StringVar(&settingsFile, "settings", "", "Path to settings file (optional)")
 	flag.BoolVar(&showHelp, "help", false, "Show help message")
 	flag.Parse()
 
@@ -48,10 +49,12 @@ func main() {
 	}
 	defer log.Close()
 
-	// Initialize settings
+	// Initialize settings (only load file if explicitly provided)
 	settings := config.NewSettings(settingsFile, log)
-	if err := settings.Initialize(); err != nil {
-		fmt.Fprintf(os.Stderr, "Warning: Could not load settings file: %v\n", err)
+	if settingsFile != "" {
+		if err := settings.Initialize(); err != nil {
+			fmt.Fprintf(os.Stderr, "Warning: Could not load settings file: %v\n", err)
+		}
 	}
 
 	// Set logger verbosity from settings
